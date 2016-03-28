@@ -1,0 +1,8 @@
+<h1> Club </h1>
+<% if user_signed? %>
+<div> Hello, <%= @current_user.name%> </div>
+<div><%= link_to "Create new post?", new_post_path %> </div>
+<% end %>
+<br>
+<%=  link_to "Sign in", signin_path %>
+<%= link_to "Sign out", signout_path, method: "delete" %>

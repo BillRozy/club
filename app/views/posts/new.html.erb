@@ -1,0 +1,11 @@
+<h1> Создаем пост </h1> 
+
+<%= form_for (@post) do |f| %>
+	<%= f.label :title %>
+	<%= text_field_tag :title %>
+
+      <%= f.label :body %>
+      <%= f.text_field :body %>
+
+      <%= submit_tag "Create"%>
+   <% end %>

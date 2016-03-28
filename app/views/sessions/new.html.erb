@@ -1,0 +1,14 @@
+<h1> Форма входа </h1> 
+
+<%= form_tag (sessions_path) do %>
+	<%= label_tag 'session[email]' %>
+	<%= text_field_tag 'session[email]' %>
+
+      <%= label_tag 'session[password]' %>
+      <%= password_field_tag 'session[password]' %>
+
+      <%= label_tag 'session[password_confirmation]', "Confirmation" %>
+      <%= password_field_tag 'session[password_confirmation]' %>
+
+      <%= submit_tag "Sign in"%>
+   <% end %>

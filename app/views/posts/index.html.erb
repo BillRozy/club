@@ -1,0 +1,13 @@
+<h1> Все посты </h1>
+<ul class="posts">
+<% @posts.each do |p| %>
+<li>
+	<h2><%= p.title %> </h2>   <br>
+	<%= p.body %>
+	<% if user_signed? %>
+  <%= link_to 'Cоздатель', '#' %>
+  	<% end %>
+
+</li>
+<% end %>
+</ul>
